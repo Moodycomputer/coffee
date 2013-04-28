@@ -1,23 +1,21 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Terracomma</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	  <script>
-			$(document).on('mousemove',function(e){
-				var mx = e.pageX,
-				  my = e.pageY,
-				  width = $(document).innerWidth(),
-				  height = $(document).innerHeight(),
-				  h = (mx / width) * 360,
-				  l = 50 - (my / height) * 50;
-				$('body').css("background", "hsl(" + h + ",60%," + l +"%)");
-			});
-	  </script>
-  </head>
-  <body>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>Emporer Out</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<style>
+		html{
+			background: url("emperor.gif");
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+
+</body>
 </html>
