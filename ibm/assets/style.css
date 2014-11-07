@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+	margin: 0;
+	font: normal normal 100%/1.2 sans-serif;
+	-webkit-font-rendering: antialiased;
+	background: rgb(34,34,34);
+}
+.slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	padding: 5vh 10vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s ease opacity, .3s ease visibility;
+}
+.slide.current{
+	visibility: visible;
+	opacity: 1;
+}
+img{
+	max-height: 90vh;
+	max-width: 100%;
+	border-radius: .25em;
+	margin: 0 2em;
+}
+.shade{
+	box-shadow: 0 0 1em 0 rgb(20,20,20);
+}
+a{
+	color: rgb(219,219,219);
+	text-decoration: none;
+}
